@@ -1,0 +1,9 @@
+<Window x:Class="ExamenLenguajesVisuales1.Views.MenuPrincipalView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Principal" Height="250" Width="300">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+        <Button Content="Categorias" Width="150" Height="40" Margin="0,0,0,10" Click="Categorias_Click"/>
+        <Button Content="Productos" Width="150" Height="40" Click="Productos_Click"/>
+    </StackPanel>
+</Window>
