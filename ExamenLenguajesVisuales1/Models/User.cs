@@ -12,13 +12,14 @@ namespace ExamenLenguajesVisuales1.Models
 
         [Required]
         [Column("usuario")]
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } = string.Empty;
 
         [Required]
-        [Column("contraseña")]
-        public string Password { get; set; }
+        [Column("contraseÃ±a")]
+        public string Password { get; set; } = string.Empty;
 
+        [Required]
         [Column("rol")]
-        public string Rol { get; set; }
+        public string Rol { get; set; } = string.Empty;
     }
 }
