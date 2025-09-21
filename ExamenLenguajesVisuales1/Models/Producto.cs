@@ -12,7 +12,7 @@ namespace ExamenLenguajesVisuales1.Models
 
         [Required]
         [Column("nombre")]
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } = string.Empty;
 
         [Column("descripcion")]
         public string? Descripcion { get; set; }
@@ -32,5 +32,12 @@ namespace ExamenLenguajesVisuales1.Models
         [Required]
         [Column("usuario_id")]
         public int UsuarioId { get; set; }
+
+        // Navigation properties (not mapped to database columns)
+        [NotMapped]
+        public Categoria? Categoria { get; set; }
+
+        [NotMapped]
+        public User? Usuario { get; set; }
     }
 }

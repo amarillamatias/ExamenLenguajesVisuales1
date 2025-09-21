@@ -12,7 +12,7 @@ namespace ExamenLenguajesVisuales1.Models
 
         [Required]
         [Column("nombre")]
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } = string.Empty;
 
         [Column("descripcion")]
         public string? Descripcion { get; set; }
